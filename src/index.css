@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EDSON Home Maintenance Design System
+   Navy Blue & Gold branding inspired by the original business card
+   All colors MUST be HSL for proper theming
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Clean and professional */
+    --background: 0 0% 100%;
+    --foreground: 229 40% 12%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 229 40% 12%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 40% 12%;
+
+    /* Primary - Edson Navy Blue */
+    --primary: 229 60% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 229 60% 50%;
+    --primary-dark: 229 60% 22%;
+
+    /* Secondary - Light neutrals */
+    --secondary: 229 15% 94%;
+    --secondary-foreground: 229 40% 12%;
+
+    /* Muted tones */
+    --muted: 229 10% 93%;
+    --muted-foreground: 229 10% 48%;
+
+    /* Accent - Edson Gold/Yellow for CTAs */
+    --accent: 44 95% 55%;
+    --accent-foreground: 229 40% 12%;
+    --accent-light: 44 95% 70%;
+
+    /* Trust-building greens */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* System colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 229 15% 88%;
+    --input: 229 15% 88%;
+    --ring: 229 60% 35%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(229 60% 35%), hsl(245 60% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(229 60% 18%) 0%, hsl(245 55% 25%) 50%, hsl(229 60% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(229 15% 98%) 100%);
+    --gradient-service: linear-gradient(135deg, hsl(229 60% 95%) 0%, hsl(245 60% 95%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(44 95% 55%), hsl(38 95% 50%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(229 40% 12% / 0.1), 0 2px 4px -1px hsl(229 40% 12% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(229 40% 12% / 0.1), 0 4px 6px -2px hsl(229 40% 12% / 0.05);
+    --shadow-button: 0 1px 2px 0 hsl(229 40% 12% / 0.05);
+    --shadow-glow: 0 0 40px hsl(229 60% 35% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 229 40% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 229 40% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 229 40% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 229 60% 60%;
+    --primary-foreground: 229 40% 8%;
+    --primary-light: 229 60% 72%;
+    --primary-dark: 229 60% 45%;
+
+    --secondary: 229 20% 16%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 229 15% 13%;
+    --muted-foreground: 229 10% 62%;
+
+    --accent: 44 95% 58%;
+    --accent-foreground: 229 40% 8%;
+    --accent-light: 44 95% 72%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 229 20% 18%;
+    --input: 229 20% 18%;
+    --ring: 229 60% 60%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(229 60% 55%), hsl(245 60% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(229 60% 10%) 0%, hsl(245 55% 14%) 50%, hsl(229 60% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(229 40% 10%) 0%, hsl(229 20% 14%) 100%);
+    --gradient-service: linear-gradient(135deg, hsl(229 60% 13%) 0%, hsl(245 60% 13%) 100%);
+
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.2), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.2), 0 4px 6px -2px hsl(0 0% 0% / 0.1);
+    --shadow-button: 0 1px 2px 0 hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 40px hsl(229 60% 55% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Navigation uppercase styling */
+  .nav-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  /* Hero section styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Service card styles */
+  .service-card {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Button variants */
+  .btn-primary {
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-button);
+    transition: var(--transition-smooth);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .btn-accent {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    box-shadow: var(--shadow-button);
+    transition: var(--transition-bounce);
+  }
+
+  .btn-accent:hover {
+    background: hsl(var(--accent-light));
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Text effects */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+
+  /* Animation utilities */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
