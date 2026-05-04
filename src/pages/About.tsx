@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import { IconCheck, IconPaint, IconPhone } from "@tabler/icons-react";
+import edsonImage from "@/assets/edson.png";
 
 const About = () => {
   return (
@@ -38,12 +39,13 @@ const About = () => {
 
       {/* Story */}
       <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto space-y-12">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Our <span className="text-gradient">Story</span>
@@ -64,11 +66,50 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-4"
+          >
+            <div className="service-card mx-auto max-w-md rounded-2xl border border-border bg-card p-6 sm:p-8 text-center">
+              <div className="flex flex-col items-center gap-6">
+                <div className="relative h-36 w-36 flex-shrink-0 overflow-hidden rounded-full border-4 border-accent/70 bg-muted shadow-lg">
+                  <img
+                    src={edsonImage}
+                    alt="Edson, founder of Edson Maintenance"
+                    loading="lazy"
+                    decoding="async"
+                    width={689}
+                    height={666}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-wide text-primary">
+                    Founder
+                  </p>
+                  <h3 className="mt-1 text-2xl font-black text-foreground">
+                    Edson
+                  </h3>
+                  <p className="mt-1 text-sm font-semibold text-muted-foreground">
+                    Founder, Edson Maintenance
+                  </p>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    Founded by Edson, Edson Maintenance is built on reliable workmanship,
+                    honest service, and practical maintenance solutions for homes and
+                    businesses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
           >
             {[
               "Professional painters of houses, pavements, cupboards, steel & roofing",

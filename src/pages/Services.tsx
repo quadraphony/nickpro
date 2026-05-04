@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ContactSection from "@/components/sections/ContactSection";
+import { Link } from "react-router-dom";
 import { IconPaint, IconDroplet, IconWind, IconBuildingSkyscraper, IconTool, IconSparkles } from "@tabler/icons-react";
 
 const serviceDetails = [
@@ -108,6 +109,24 @@ const Services = () => {
               </ul>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      <section className="px-4 pb-20">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-card p-8 text-center service-card">
+          <h2 className="text-3xl font-bold text-foreground mb-3">
+            View Our Recent Work
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Browse real Edson Maintenance project images by service type.
+          </p>
+          <Link
+            to="/gallery"
+            className="inline-flex items-center justify-center px-8 py-3 rounded-full text-sm font-semibold text-white transition-all hover:-translate-y-1 hover:shadow-lg"
+            style={{ background: "linear-gradient(135deg, hsl(229 60% 35%), hsl(245 60% 40%))" }}
+          >
+            Open Gallery
+          </Link>
         </div>
       </section>
 

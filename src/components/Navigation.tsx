@@ -9,6 +9,7 @@ import {
   IconHome,
   IconInfoCircle,
   IconPaint,
+  IconPhoto,
   IconMail,
   IconPhone,
 } from "@tabler/icons-react";
@@ -21,6 +22,7 @@ const Navigation = () => {
     { name: "Home", href: "/", icon: IconHome },
     { name: "About", href: "/about", icon: IconInfoCircle },
     { name: "Services", href: "/services", icon: IconPaint },
+    { name: "Gallery", href: "/gallery", icon: IconPhoto },
     { name: "Contact", href: "/contact", icon: IconMail },
   ];
 
