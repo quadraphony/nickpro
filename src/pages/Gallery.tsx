@@ -20,9 +20,9 @@ const Gallery = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl md:text-6xl font-black text-white mb-6"
+            className="font-display text-5xl md:text-6xl font-black text-white mb-6"
           >
-            Project <span className="text-gradient-gold">Gallery</span>
+            Project <span className="text-gradient-accent">Gallery</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ const Gallery = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-xl text-white/70 leading-relaxed"
           >
-            Real maintenance, painting, roofing, plumbing, tiling, and renovation work completed by Edson Maintenance.
+            Real tiling, ceiling, painting, and flooring work completed by NickPro.
           </motion.p>
         </div>
       </section>

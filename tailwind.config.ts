@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        sans: ["Manrope", "sans-serif"],
+        display: ["Space Grotesk", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

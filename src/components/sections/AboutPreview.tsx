@@ -39,17 +39,17 @@ const AboutPreview = () => {
                 viewport={{ once: true }}
                 className="inline-block text-xs font-bold uppercase tracking-widest text-accent mb-3"
               >
-                About EDSON
+                About NickPro
               </motion.span>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="text-4xl md:text-5xl font-bold text-foreground"
+                className="font-display text-4xl md:text-5xl font-bold text-foreground"
               >
                 Cape Town's{" "}
-                <span className="text-gradient">Home Maintenance</span>{" "}
+                <span className="text-gradient">Renovation</span>{" "}
                 Specialists
               </motion.h2>
             </div>
@@ -61,7 +61,7 @@ const AboutPreview = () => {
               viewport={{ once: true }}
               className="text-lg text-muted-foreground leading-relaxed"
             >
-              At EDSON Home Maintenance, we believe every homeowner deserves a beautiful,
+              At NickPro, we believe every homeowner deserves a beautiful,
               well-maintained property. With over a decade serving Cape Town communities,
               we've built a reputation for quality, reliability, and honest pricing.
             </motion.p>
@@ -73,7 +73,7 @@ const AboutPreview = () => {
               viewport={{ once: true }}
               className="text-muted-foreground"
             >
-              From a single room repaint to a full exterior overhaul with waterproofing,
+              From fresh painting to tiling, ceiling, and flooring upgrades,
               our dedicated team brings professionalism and pride to every project.
             </motion.p>
 

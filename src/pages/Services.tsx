@@ -3,44 +3,32 @@ import { motion } from "framer-motion";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import { Link } from "react-router-dom";
-import { IconPaint, IconDroplet, IconWind, IconBuildingSkyscraper, IconTool, IconSparkles } from "@tabler/icons-react";
+import { IconPaint, IconBuildingSkyscraper, IconTool, IconHome } from "@tabler/icons-react";
 
 const serviceDetails = [
   {
+    icon: <IconBuildingSkyscraper className="h-8 w-8" />,
+    title: "Tiling",
+    desc: "We handle neat, durable wall and floor tiling for bathrooms, kitchens, patios, and interior spaces. Surfaces are prepared properly so the finish looks sharp and lasts.",
+    items: ["Bathroom tiling", "Kitchen tiling", "Floor tiles", "Wall tiles"],
+  },
+  {
+    icon: <IconHome className="h-8 w-8" />,
+    title: "Ceiling",
+    desc: "We install and repair ceilings for homes, offices, and renovation projects, keeping the work clean, level, and ready for painting or finishing.",
+    items: ["Ceiling installation", "Ceiling repairs", "Bulkheads", "Finishing work"],
+  },
+  {
     icon: <IconPaint className="h-8 w-8" />,
     title: "Professional Painting",
-    desc: "We paint houses, pavements, roofs, steel structures, and cupboards to a premium finish using top-grade materials. We prep surfaces properly, protect your furniture and floors, and leave your space spotless.",
-    items: ["Interior rooms & ceilings", "Exterior walls & fascias", "Pavements & driveways", "Roof painting"],
-  },
-  {
-    icon: <IconDroplet className="h-8 w-8" />,
-    title: "Waterproofing",
-    desc: "Cape Town's rains can cause serious damage. Our waterproofing services keep your home sealed and protected all year round — flat roofs, parapets, balconies, and more.",
-    items: ["Flat roof waterproofing", "Parapet & balcony sealing", "Crack repairs", "Long-lasting coatings"],
-  },
-  {
-    icon: <IconBuildingSkyscraper className="h-8 w-8" />,
-    title: "Cupboard & Steel Painting",
-    desc: "Give old cupboards and metal surfaces a brand new lease on life. We strip, prime, and apply durable paint for a factory-fresh look that lasts years.",
-    items: ["Kitchen cupboards", "Steel doors & gates", "Burglar bars", "Built-in wardrobes"],
-  },
-  {
-    icon: <IconWind className="h-8 w-8" />,
-    title: "Gutter & Roof Cleaning",
-    desc: "Blocked gutters cause leaks and structural damage. Our team safely clears your gutters and cleans roof surfaces to keep water flowing away from your home.",
-    items: ["Gutter unblocking", "Roof surface cleaning", "Moss & lichen removal", "Drain inspection"],
-  },
-  {
-    icon: <IconSparkles className="h-8 w-8" />,
-    title: "Window Cleaning",
-    desc: "Crystal-clear, streak-free windows transform the look of your home or business. We use safe, professional methods for windows at any height.",
-    items: ["Residential windows", "Commercial shopfronts", "Skylights", "Frames & sills"],
+    desc: "We paint interior and exterior spaces to a clean, professional finish using careful preparation and reliable materials.",
+    items: ["Interior painting", "Exterior painting", "Ceiling painting", "Touch-ups"],
   },
   {
     icon: <IconTool className="h-8 w-8" />,
-    title: "Varnishing & Decking",
-    desc: "Protect and beautify your timber surfaces. Our varnishing service restores wooden decks, doors, and furniture to a rich, durable finish.",
-    items: ["Outdoor decking", "Wooden doors & windows", "Garden furniture", "Timber fences"],
+    title: "Flooring",
+    desc: "We prepare and finish floors for renovation and upgrade projects, creating practical surfaces that suit the space.",
+    items: ["Floor installation", "Floor preparation", "Floor repairs", "Finishing"],
   },
 ];
 
@@ -61,9 +49,9 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl md:text-6xl font-black text-white mb-6"
+            className="font-display text-5xl md:text-6xl font-black text-white mb-6"
           >
-            Our <span className="text-gradient-gold">Services</span>
+            Our <span className="text-gradient-accent">Services</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -71,7 +59,7 @@ const Services = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-xl text-white/70 leading-relaxed"
           >
-            Comprehensive home maintenance solutions for Cape Town homes and businesses.
+            Professional tiling, ceiling, painting, and flooring services for Cape Town homes and businesses.
           </motion.p>
         </div>
       </section>
@@ -102,7 +90,7 @@ const Services = () => {
                 {svc.items.map((item) => (
                   <li key={item} className="flex items-center space-x-2 text-xs text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                      style={{ background: "hsl(44 95% 55%)" }} />
+                      style={{ background: "hsl(0 82% 54%)" }} />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -114,11 +102,11 @@ const Services = () => {
 
       <section className="px-4 pb-20">
         <div className="max-w-3xl mx-auto rounded-2xl border border-border bg-card p-8 text-center service-card">
-          <h2 className="text-3xl font-bold text-foreground mb-3">
+          <h2 className="font-display text-3xl font-bold text-foreground mb-3">
             View Our Recent Work
           </h2>
           <p className="text-muted-foreground mb-6">
-            Browse real Edson Maintenance project images by service type.
+            Browse real NickPro project images by service type.
           </p>
           <Link
             to="/gallery"

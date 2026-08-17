@@ -3,43 +3,31 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
   IconPaint,
-  IconDroplet,
-  IconWind,
   IconBuildingSkyscraper,
   IconTool,
-  IconSparkles,
+  IconHome,
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 
 const services = [
   {
-    title: "Professional Painting",
-    description: "Interior & exterior painting for houses, pavements, steel surfaces, and roofing. Premium finishes that last.",
-    icon: <IconPaint className="h-6 w-6 text-primary" />,
-  },
-  {
-    title: "Waterproofing",
-    description: "Expert waterproofing solutions to protect your home from water damage and dampness year-round.",
-    icon: <IconDroplet className="h-6 w-6 text-primary" />,
-  },
-  {
-    title: "Cupboard & Steel Painting",
-    description: "Precision painting for cupboards, steel structures, and fixtures with durable, high-quality coatings.",
+    title: "Tiling",
+    description: "Wall and floor tiling for bathrooms, kitchens, living areas, patios, and feature spaces.",
     icon: <IconBuildingSkyscraper className="h-6 w-6 text-primary" />,
   },
   {
-    title: "Gutter & Roof Cleaning",
-    description: "Professional gutter and roof cleaning to prevent blockages, leaks, and structural damage.",
-    icon: <IconWind className="h-6 w-6 text-primary" />,
+    title: "Ceiling",
+    description: "Ceiling installation and repair work completed neatly for homes, offices, and renovations.",
+    icon: <IconHome className="h-6 w-6 text-primary" />,
   },
   {
-    title: "Window Cleaning",
-    description: "Crystal-clear, streak-free window cleaning for a brighter, more welcoming home or office.",
-    icon: <IconSparkles className="h-6 w-6 text-primary" />,
+    title: "Professional Painting",
+    description: "Interior and exterior painting with careful preparation, clean lines, and durable finishes.",
+    icon: <IconPaint className="h-6 w-6 text-primary" />,
   },
   {
-    title: "Varnishing & Decker",
-    description: "Quality varnishing and deck treatments that protect and beautify wooden surfaces.",
+    title: "Flooring",
+    description: "Flooring preparation, installation, and finishing for practical, polished interior spaces.",
     icon: <IconTool className="h-6 w-6 text-primary" />,
   },
 ];
@@ -101,11 +89,11 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Services at a <span className="text-gradient">Glance</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive home maintenance and painting solutions tailored for Cape Town homes and businesses.
+            Tiling, ceiling, painting, and flooring solutions for Cape Town homes and businesses.
           </p>
         </motion.div>
 

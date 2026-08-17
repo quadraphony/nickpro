@@ -18,9 +18,9 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl md:text-6xl font-black text-white mb-6"
+            className="font-display text-5xl md:text-6xl font-black text-white mb-6"
           >
-            Get a Free <span className="text-gradient-gold">Quote</span>
+            Get a Free <span className="text-gradient-accent">Quote</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

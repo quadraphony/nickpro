@@ -17,14 +17,10 @@ const Footer = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   const services = [
-    "House Painting",
-    "Waterproofing",
-    "Roof Painting",
-    "Gutter Cleaning",
-    "Roof Cleaning",
-    "Window Cleaning",
-    "Varnishing Decker",
-    "Steel & Cupboard Painting",
+    "Tiling",
+    "Ceiling",
+    "Painting",
+    "Flooring",
   ];
 
   const quickLinks = [
@@ -61,7 +57,7 @@ const Footer = () => {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/27624723536"
+          href="https://wa.me/27621987570"
           target="_blank"
           rel="noopener noreferrer"
           className="group bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:-translate-y-1 hover:scale-110"
@@ -73,7 +69,7 @@ const Footer = () => {
 
       <footer className="bg-card border-t border-border">
         {/* Top gradient bar */}
-        <div className="h-1 w-full" style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(44 95% 55%), hsl(229 60% 35%))" }} />
+        <div className="h-1 w-full" style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(0 82% 54%), hsl(229 60% 35%))" }} />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -86,13 +82,13 @@ const Footer = () => {
                   <IconHome className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-foreground">EDSON</h3>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Home Maintenance</p>
+                  <h3 className="font-display text-lg font-bold text-foreground">NickPro</h3>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">nickpro.co.za</p>
                 </div>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Cape Town's trusted professionals for painting, waterproofing, and home maintenance.
-                Build & Renovate — transforming spaces with quality and care.
+                Cape Town's trusted professionals for tiling, ceiling, painting, and flooring.
+                Visit nickpro.co.za for quality renovation work and free quotes.
               </p>
               <div className="flex space-x-3">
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -102,7 +98,7 @@ const Footer = () => {
                   <IconBrandInstagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://wa.me/27624723536"
+                  href="https://wa.me/27621987570"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-green-500 transition-colors"
@@ -157,14 +153,14 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <IconPhone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                  <a href="tel:+27624723536" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                    +27 62 472 3536
+                  <a href="tel:+27621987570" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    +27 62 198 7570
                   </a>
                 </div>
                 <div className="flex items-start space-x-3">
                   <IconMail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                  <a href="mailto:edsonjirry43@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm break-all">
-                    edsonjirry43@gmail.com
+                  <a href="mailto:Nickmabhuku1988@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm break-all">
+                    Nickmabhuku1988@gmail.com
                   </a>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -175,7 +171,7 @@ const Footer = () => {
 
               <div className="mt-4 p-3 bg-secondary/50 rounded-lg border border-border">
                 <p className="text-sm font-medium text-foreground">Business Hours</p>
-                <p className="text-xs text-muted-foreground mt-1">Monday – Saturday</p>
+                <p className="text-xs text-muted-foreground mt-1">Monday - Saturday</p>
                 <p className="text-xs text-accent font-medium">Free Quotes Available</p>
               </div>
             </div>
@@ -184,9 +180,9 @@ const Footer = () => {
           {/* Bottom */}
           <div className="border-t border-border mt-10 pt-6 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} EDSON Home Maintenance Services. All rights reserved.
+              © {currentYear} NickPro Services. All rights reserved.
             </p>
-            <p className="text-xs text-muted-foreground">The Best in Cape Town</p>
+            <p className="text-xs text-muted-foreground">nickpro.co.za</p>
           </div>
         </div>
       </footer>

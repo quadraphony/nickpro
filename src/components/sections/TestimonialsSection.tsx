@@ -4,22 +4,22 @@ import { IconQuote, IconChevronLeft, IconChevronRight, IconStar } from "@tabler/
 
 const testimonials = [
   {
-    quote: "Edson's team painted our entire house inside and out. The finish is absolutely flawless — clean lines, no drips, and they left the place spotless afterwards. Best painters in Cape Town!",
+    quote: "NickPro's team painted our entire house inside and out. The finish is absolutely flawless — clean lines, no drips, and they left the place spotless afterwards. Best painters in Cape Town!",
     name: "Nomvula Dlamini",
     designation: "Homeowner, Bellville",
   },
   {
-    quote: "We had serious waterproofing problems on our flat roof. Edson came, assessed it quickly, and fixed it permanently. No more leaks, even after the big storms. Highly recommend!",
+    quote: "NickPro tiled our bathroom and the finish was clean and precise. They worked neatly, kept us updated, and delivered exactly what we asked for.",
     name: "Pieter van der Berg",
     designation: "Property Owner, Somerset West",
   },
   {
-    quote: "Affordable, professional and fast. They cleaned our gutters and repainted the exterior in two days. The attention to detail was incredible. Will definitely use again.",
+    quote: "Affordable, professional and fast. They repaired our ceiling and repainted the room with excellent attention to detail. Will definitely use again.",
     name: "Thandi Mokoena",
     designation: "Homeowner, Mitchells Plain",
   },
   {
-    quote: "I needed my office cupboards and steel doors painted. Edson's team arrived on time, covered everything carefully, and delivered a premium finish. Couldn't be happier.",
+    quote: "I needed new flooring finished at my office. NickPro arrived on time, worked carefully, and delivered a premium finish. Couldn't be happier.",
     name: "David Okafor",
     designation: "Business Owner, City Bowl",
   },
@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             What Our <span className="text-gradient">Clients Say</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -57,13 +57,13 @@ const TestimonialsSection = () => {
           className="relative"
         >
           <div className="rounded-3xl border bg-card shadow-lg overflow-hidden">
-            {/* Gold top bar */}
-            <div className="h-1 w-full" style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(44 95% 55%))" }} />
+            {/* Accent top bar */}
+            <div className="h-1 w-full" style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(0 82% 54%))" }} />
 
             <div className="p-10 md:p-14">
               <div className="flex justify-center mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <IconStar key={i} className="h-5 w-5 text-accent fill-current" style={{ color: "hsl(44 95% 55%)" }} />
+                  <IconStar key={i} className="h-5 w-5 text-accent fill-current" style={{ color: "hsl(0 82% 54%)" }} />
                 ))}
               </div>
 

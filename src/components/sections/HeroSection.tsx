@@ -54,7 +54,7 @@ const HeroSection = () => {
       />
       <div
         className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full opacity-20 blur-3xl animate-float"
-        style={{ background: "hsl(44 95% 55%)" }}
+        style={{ background: "hsl(0 82% 54%)" }}
       />
 
       {/* Content */}
@@ -71,28 +71,28 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-8 border"
             style={{
-              background: "hsl(44 95% 55% / 0.15)",
-              borderColor: "hsl(44 95% 55% / 0.4)",
-              color: "hsl(44 95% 70%)",
+              background: "hsl(0 82% 54% / 0.15)",
+              borderColor: "hsl(0 82% 54% / 0.4)",
+              color: "hsl(0 82% 70%)",
             }}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse" />
-            <span>Cape Town's Most Trusted Home Maintenance</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+            <span>Cape Town Tiling, Ceiling, Painting & Flooring</span>
           </motion.div>
 
           {/* Main heading */}
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 leading-none tracking-tight"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 leading-none tracking-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Build &amp;{" "}
+            NickPro{" "}
             <span className="relative inline-block">
-              <span className="text-gradient-gold">RENOVATE</span>
+              <span className="text-gradient-accent">Services</span>
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 rounded-full"
-                style={{ background: "linear-gradient(90deg, hsl(44 95% 55%), hsl(38 95% 45%))" }}
+                style={{ background: "linear-gradient(90deg, hsl(0 82% 54%), hsl(355 78% 44%))" }}
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
@@ -106,8 +106,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            Professional painters, waterproofing, and home maintenance services.
-            Transforming Cape Town homes with quality craftsmanship.
+            Professional tiling, ceiling, painting, and flooring services.
+            Visit nickpro.co.za for quality craftsmanship.
           </motion.p>
 
           {/* CTAs */}
@@ -120,18 +120,18 @@ const HeroSection = () => {
             <Link
               to="/contact"
               className="group flex items-center space-x-2 px-8 py-4 rounded-full text-base font-bold text-foreground shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl"
-              style={{ background: "linear-gradient(135deg, hsl(44 95% 55%), hsl(38 95% 45%))" }}
+              style={{ background: "linear-gradient(135deg, hsl(0 82% 54%), hsl(355 78% 44%))" }}
             >
               <IconMail className="h-5 w-5" />
               <span>Get a Free Quote</span>
             </Link>
             <a
-              href="tel:+27624723536"
+              href="tel:+27621987570"
               className="group flex items-center space-x-2 px-8 py-4 rounded-full text-base font-semibold text-white border-2 transition-all hover:-translate-y-1 hover:bg-white/10"
               style={{ borderColor: "hsl(229 60% 60%)" }}
             >
               <IconPhone className="h-5 w-5" />
-              <span>+27 62 472 3536</span>
+              <span>+27 62 198 7570</span>
             </a>
           </motion.div>
         </motion.div>

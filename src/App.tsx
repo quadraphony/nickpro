@@ -19,7 +19,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider
       attribute="class"
-      defaultTheme="light"
+      defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
     >
@@ -49,7 +49,7 @@ const App = () => (
                 <main className="min-h-screen pt-16 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-8xl font-black text-gradient mb-4">404</div>
-                    <h2 className="text-2xl font-bold text-foreground mb-2">Page Not Found</h2>
+                    <h2 className="font-display text-2xl font-bold text-foreground mb-2">Page Not Found</h2>
                     <p className="text-muted-foreground mb-8">The page you're looking for doesn't exist.</p>
                     <a href="/" className="px-8 py-3 rounded-full text-white font-semibold"
                       style={{ background: "linear-gradient(135deg, hsl(229 60% 35%), hsl(245 60% 40%))" }}>

@@ -46,7 +46,7 @@ const features = [
   },
   {
     title: "Local Cape Town Experts",
-    description: "We know Cape Town's climate and buildings. Roofing, waterproofing, painting — done right.",
+    description: "We know Cape Town homes and business spaces. Tiling, ceiling, painting, and flooring done right.",
     icon: <IconHome />,
   },
   {
@@ -113,8 +113,8 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Why Choose <span className="text-gradient">EDSON</span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Why Choose <span className="text-gradient">NickPro</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Experience the difference that professional expertise and genuine care make for your home

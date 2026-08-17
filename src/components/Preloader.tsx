@@ -45,8 +45,8 @@ const Preloader = () => {
                 </svg>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">EDSON</div>
-                <div className="text-xs text-muted-foreground tracking-widest uppercase">Home Maintenance</div>
+                <div className="font-display text-2xl font-bold text-primary">NickPro</div>
+                <div className="text-xs text-muted-foreground tracking-widest uppercase">nickpro.co.za</div>
               </div>
             </div>
             <p className="text-muted-foreground text-sm">
@@ -58,7 +58,7 @@ const Preloader = () => {
             <div className="w-full h-1.5 bg-secondary rounded-full overflow-hidden">
               <motion.div
                 className="h-full rounded-full"
-                style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(44 95% 55%))" }}
+                style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(0 82% 54%))" }}
                 initial={{ width: 0 }}
                 animate={{ width: `${Math.min(progress, 100)}%` }}
                 transition={{ duration: 0.3, ease: "easeOut" }}

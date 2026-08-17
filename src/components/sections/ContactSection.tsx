@@ -26,7 +26,7 @@ const ContactSection: React.FC = () => {
     if (!formData.name || !formData.email || !formData.service || !formData.message) return;
 
     const msg = `Hi, I'm ${formData.name}. I'm interested in: ${formData.service}. ${formData.message}. Email: ${formData.email}${formData.phone ? `. Phone: ${formData.phone}` : ""}.`;
-    const url = `https://wa.me/27624723536?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/27621987570?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
     setSubmitted(true);
     setTimeout(() => {
@@ -39,20 +39,20 @@ const ContactSection: React.FC = () => {
     {
       icon: <IconPhone className="h-5 w-5" />,
       title: "Phone",
-      details: ["+27 62 472 3536"],
-      href: "tel:+27624723536",
+      details: ["+27 62 198 7570"],
+      href: "tel:+27621987570",
     },
     {
       icon: <IconMail className="h-5 w-5" />,
       title: "Email",
-      details: ["edsonjirry43@gmail.com"],
-      href: "mailto:edsonjirry43@gmail.com",
+      details: ["Nickmabhuku1988@gmail.com"],
+      href: "mailto:Nickmabhuku1988@gmail.com",
     },
     {
       icon: <IconBrandWhatsapp className="h-5 w-5" />,
       title: "WhatsApp",
       details: ["Chat with us instantly"],
-      href: "https://wa.me/27624723536",
+      href: "https://wa.me/27621987570",
     },
     {
       icon: <IconClock className="h-5 w-5" />,
@@ -78,7 +78,7 @@ const ContactSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Ready to Transform <span className="text-gradient">Your Home?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -142,9 +142,9 @@ const ContactSection: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
-              <div className="h-1 w-full" style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(44 95% 55%))" }} />
+              <div className="h-1 w-full" style={{ background: "linear-gradient(90deg, hsl(229 60% 35%), hsl(0 82% 54%))" }} />
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6">Request a Free Quote</h3>
+                <h3 className="font-display text-2xl font-bold text-foreground mb-6">Request a Free Quote</h3>
 
                 {submitted ? (
                   <motion.div
@@ -187,13 +187,10 @@ const ContactSection: React.FC = () => {
                         <select id="service" name="service" value={formData.service} onChange={handleChange} required
                           className="w-full px-4 py-2.5 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-sm">
                           <option value="">Select a service</option>
-                          <option value="House Painting">House Painting</option>
-                          <option value="Waterproofing">Waterproofing</option>
-                          <option value="Roof Painting">Roof Painting</option>
-                          <option value="Gutter Cleaning">Gutter Cleaning</option>
-                          <option value="Window Cleaning">Window Cleaning</option>
-                          <option value="Cupboard/Steel Painting">Cupboard / Steel Painting</option>
-                          <option value="Varnishing Decker">Varnishing Decker</option>
+                          <option value="Tiling">Tiling</option>
+                          <option value="Ceiling">Ceiling</option>
+                          <option value="Painting">Painting</option>
+                          <option value="Flooring">Flooring</option>
                           <option value="Other">Other</option>
                         </select>
                       </div>

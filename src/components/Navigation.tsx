@@ -41,8 +41,8 @@ const Navigation = () => {
               </svg>
             </div>
             <div>
-              <div className="text-base font-bold text-foreground leading-tight">EDSON</div>
-              <div className="text-[10px] text-muted-foreground tracking-wider uppercase leading-tight">Home Maintenance</div>
+              <div className="font-display text-base font-bold text-foreground leading-tight">NickPro</div>
+              <div className="text-[10px] text-muted-foreground tracking-wider uppercase leading-tight">nickpro.co.za</div>
             </div>
           </Link>
 
@@ -72,9 +72,9 @@ const Navigation = () => {
             ))}
             <ThemeToggle />
             <a
-              href="tel:+27624723536"
+              href="tel:+27621987570"
               className="ml-2 flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ background: "linear-gradient(135deg, hsl(44 95% 50%), hsl(38 95% 45%))" }}
+              style={{ background: "linear-gradient(135deg, hsl(0 82% 50%), hsl(355 78% 44%))" }}
             >
               <IconPhone className="h-4 w-4" />
               <span>Call Now</span>
@@ -122,13 +122,13 @@ const Navigation = () => {
                 );
               })}
               <a
-                href="tel:+27624723536"
+                href="tel:+27621987570"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center space-x-2 w-full mt-2 py-2.5 rounded-lg text-sm font-bold text-foreground"
-                style={{ background: "linear-gradient(135deg, hsl(44 95% 55%), hsl(38 95% 50%))" }}
+                style={{ background: "linear-gradient(135deg, hsl(0 82% 54%), hsl(355 78% 50%))" }}
               >
                 <IconPhone className="h-4 w-4" />
-                <span>Call +27 62 472 3536</span>
+                <span>Call +27 62 198 7570</span>
               </a>
             </div>
           </motion.div>

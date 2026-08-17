@@ -1,12 +1,7 @@
 export type ServiceImageCategory =
   | "Painting"
-  | "Roofing"
-  | "Plumbing"
   | "Tiling"
-  | "Flooring"
-  | "Cleaning"
-  | "Carpentry"
-  | "General Maintenance";
+  | "Flooring";
 
 export type ServiceImage = {
   src: string;
@@ -17,45 +12,19 @@ export type ServiceImage = {
 };
 
 const serviceImageModules = import.meta.glob<string>(
-  "../assets/services/*.{jpeg,jpg,png,webp}",
+  "../assets/services/{painting,flooring,tiling}*.{jpeg,jpg,png,webp}",
   { eager: true, import: "default" }
 );
 
 const categoryByPrefix: Record<string, ServiceImageCategory> = {
-  carpentry: "Carpentry",
-  cleaning: "Cleaning",
-  concrete_finishing: "General Maintenance",
-  concrete_work: "General Maintenance",
-  concreting: "General Maintenance",
-  construction: "General Maintenance",
-  door_installation: "General Maintenance",
-  door_repair: "General Maintenance",
   flooring: "Flooring",
-  interior_design: "General Maintenance",
-  landscaping: "General Maintenance",
   painting: "Painting",
-  plumbing: "Plumbing",
-  roofing: "Roofing",
-  taxi: "General Maintenance",
   tiling: "Tiling",
 };
 
 const titleByPrefix: Record<string, string> = {
-  carpentry: "Carpentry Work",
-  cleaning: "Cleaning Service",
-  concrete_finishing: "Concrete Finishing",
-  concrete_work: "Concrete Work",
-  concreting: "Concreting Work",
-  construction: "Construction Work",
-  door_installation: "Door Installation",
-  door_repair: "Door Repair",
   flooring: "Flooring Installation",
-  interior_design: "Interior Finishing",
-  landscaping: "Landscaping Work",
   painting: "Professional Painting",
-  plumbing: "Plumbing Repair",
-  roofing: "Roofing Work",
-  taxi: "General Maintenance Work",
   tiling: "Tiling Work",
 };
 
@@ -64,8 +33,8 @@ const getImageMeta = (fileName: string) => {
   const prefix = name.replace(/\d+$/, "");
   const sequence = name.match(/\d+$/)?.[0];
   const normalizedPrefix = prefix.replace(/_$/, "");
-  const category = categoryByPrefix[normalizedPrefix] ?? "General Maintenance";
-  const baseTitle = titleByPrefix[normalizedPrefix] ?? "Maintenance Work";
+  const category = categoryByPrefix[normalizedPrefix] ?? "Painting";
+  const baseTitle = titleByPrefix[normalizedPrefix] ?? "Service Work";
 
   return {
     category,
@@ -87,7 +56,7 @@ export const serviceImages: ServiceImage[] = Object.entries(serviceImageModules)
       title,
       category,
       fileName,
-      alt: `Edson Maintenance ${title.toLowerCase()} project in Cape Town`,
+      alt: `NickPro ${title.toLowerCase()} project in Cape Town`,
     };
   });
 

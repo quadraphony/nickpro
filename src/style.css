@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-navy: #1e1e3f;
-  --accent-gold: #fecd08;
+  --accent-red: #dc2626;
   --accent-green: #599d3e;
   --text-white: #ffffff;
   --text-muted: #e0e0e0;
@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Manrope', sans-serif;
   background-color: var(--primary-navy);
   color: var(--text-white);
   line-height: 1.6;
@@ -52,11 +52,11 @@ header {
 .logo {
   font-weight: 800;
   font-size: 1.5rem;
-  color: var(--accent-gold);
+  color: var(--accent-red);
 }
 
 .contact-btn {
-  background: var(--accent-gold);
+  background: var(--accent-red);
   color: var(--primary-navy);
   padding: 0.8rem 1.5rem;
   border-radius: 50px;
@@ -88,7 +88,7 @@ header {
 .hero h2 {
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: var(--accent-gold);
+  color: var(--accent-red);
   letter-spacing: 4px;
   margin-bottom: 1rem;
 }
@@ -142,7 +142,7 @@ header {
 }
 
 .card h3 {
-  color: var(--accent-gold);
+  color: var(--accent-red);
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
@@ -165,7 +165,7 @@ header {
 .cta-section {
   padding: 6rem 10%;
   text-align: center;
-  background: linear-gradient(var(--accent-gold), #fbc02d);
+  background: linear-gradient(var(--accent-red), #b91c1c);
   color: var(--primary-navy);
 }
 
